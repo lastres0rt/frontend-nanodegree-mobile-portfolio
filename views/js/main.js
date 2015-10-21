@@ -505,10 +505,10 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
 
   // moving phase outside the For loop
-  var scrollTop = document.body.scrollTop / 1250;
+  var scrollTop = document.body.scrollTop;
   var phase = [];
   for (var i = 0; i < 5; i++) {
-    phase[i] = Math.sin((scrollTop) + (i % 5));
+    phase[i] = Math.sin((scrollTop / 1250) + (i % 5));
   }
 
   for (var i = 0; i < items.length; i++) {
