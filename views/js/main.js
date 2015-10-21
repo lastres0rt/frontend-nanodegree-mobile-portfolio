@@ -508,13 +508,14 @@ function updatePositions() {
   var scrollTop = document.body.scrollTop;
   var intViewportWidth = window.innerWidth / 2;
   var phase = [];
+  var sway = 0;
   for (var i = 0; i < 5; i++) {
     phase[i] = Math.sin((scrollTop / 1250) + (i % 5));
   }
 
   for (var i = 0; i < items.length; i++) {
     //items[i].style.left = items[i].basicLeft + 100 * phase[i%5] + 'px';
-    var sway = (intViewportWidth) * phase[i%5];
+    sway = (intViewportWidth) * phase[i%5];
     items[i].style.transform = "translateX(" + sway + "px)";
     items[i].style.WebkitTransform = "translateX(" + sway + "px)";
     items[i].style.msTransform = "translateX(" + sway  + "px)";
