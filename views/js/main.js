@@ -504,7 +504,7 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover');
 
-  // moving phase outside the For loop
+  // moving phase outside the For loop for optimization purposes
   var scrollTop = document.body.scrollTop;
   var intViewportWidth = window.innerWidth / 2;
   var phase = [];
@@ -516,6 +516,7 @@ function updatePositions() {
   for (var i = 0; i < items.length; i++) {
     //items[i].style.left = items[i].basicLeft + 100 * phase[i%5] + 'px';
     sway = (intViewportWidth) * phase[i%5];
+    // using transform / translateX instead of left for optimization purposes.
     items[i].style.transform = "translateX(" + sway + "px)";
     items[i].style.WebkitTransform = "translateX(" + sway + "px)";
     items[i].style.msTransform = "translateX(" + sway  + "px)";
@@ -538,7 +539,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 30; i++) { // 200 pizzas? really? I count more like 20...
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
