@@ -514,7 +514,7 @@ function updatePositions() {
   for (var i = 0; i < items.length; i++) {
     // items[i].style.left = items[i].basicLeft + 100 * phase[i%5] + 'px';
     // swapped out for CSS transform-based solution.
-    items[i].style.transform = translateX(100 * phase[i%5] + 'px');
+    items[i].style.transform = translateX(100 * phase[i % 5] + 'px');
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
