@@ -505,14 +505,15 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
 
   // moving phase outside the For loop
-  var scrollTop = document.body.scrollTop;
+  var scrollTop = document.body.scrollTop / 1250;
   var phase = [];
   for (var i = 0; i < 5; i++) {
-    phase[i] = Math.sin((scrollTop / 1250) + (i % 5));
+    phase[i] = Math.sin((scrollTop) + (i % 5));
   }
 
   for (var i = 0; i < items.length; i++) {
     //items[i].style.left = items[i].basicLeft + 100 * phase[i%5] + 'px';
+    //swapped out for CSS transform-based solution.
     items[i].style.transform = translateX(100 * phase[1%5] + 'px');
   }
 
