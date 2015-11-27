@@ -515,7 +515,7 @@ function updatePositions() {
   var phase = [];
   var sway = 0;
   for (var i = 0; i < 5; i++) {
-    phase[i] = Math.sin((scrollTop / 1250) + (i % 5));
+    phase[i] = Math.sin((scrollTop / 1250) + i);
   }
 
   for (var i = 0; i < items.length; i++) {
