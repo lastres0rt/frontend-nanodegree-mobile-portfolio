@@ -22,6 +22,7 @@ Click this link for the [Front-End Nanodegree Mobile Portfolio](http://lastres0r
 
 ##### style.css
 1. The addition of `will-change: transform;` to the `.mover` class
+1. The addition of `will-change: transform;` to the `.randomPizzaContainer` class
 
 ##### main.js
 
