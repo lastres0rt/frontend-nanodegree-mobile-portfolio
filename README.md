@@ -4,6 +4,8 @@ Several optimizations have been made to this portfolio to make `index.html` achi
 
 ### How To Run It
 
+Click this link for the [Front-End Nanodegree Mobile Portfolio](http://lastres0rt.github.io/frontend-nanodegree-mobile-portfolio/) to see `index.html`, and then click this link for [Cam's Pizzeria Page](http://lastres0rt.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html) to see `pizza.html`.
+
 ### Optimizations Made
 
 #### index.html
@@ -23,4 +25,5 @@ Several optimizations have been made to this portfolio to make `index.html` achi
 
 ##### main.js
 
-1.
+1. Reduced the number of pizzas needed in the background from 200 down to a dynamically-selected number based on `window.innerHeight`
+2. Optimized the `updatePostions` function to reduce the number of calculations and functions being made within the iteration loop, especially `scrollTop`
