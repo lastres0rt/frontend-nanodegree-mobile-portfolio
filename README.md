@@ -27,5 +27,7 @@ Click this link for the [Front-End Nanodegree Mobile Portfolio](http://lastres0r
 ##### main.js
 
 1. Reduced the number of pizzas needed in the background from 200 down to a dynamically-selected number based on `window.innerHeight`
-2. Optimized the `updatePostions` function to reduce the number of calculations and functions being made within the iteration loop, especially `scrollTop`
-3. Optimized the `changePizzaSizes(size)` function to reduce the number of calculations and functions being made within the iteration loop.
+1. Optimized the `updatePostions` function to reduce the number of calculations and functions being made within the iteration loop, especially `scrollTop`
+1. Optimized the `changePizzaSizes(size)` function to reduce the number of calculations and functions being made within the iteration loop.
+1. Replaced instances of `querySelector()` with `getElementById()`
+1. Replaced instances of `querySelectorAll()` with `getElementsByClassName()`
