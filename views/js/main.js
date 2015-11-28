@@ -404,20 +404,18 @@ var resizePizzas = function(size) {
 
   // Changes the value for the size of the pizza above the slider
   function changeSliderLabel(size) {
-    if (document.getElementById("#pizzaSize")){
-      switch(size) {
-        case "1":
-          document.getElementById("#pizzaSize").innerHTML = "Small";
-          return;
-        case "2":
-          document.getElementById("#pizzaSize").innerHTML = "Medium";
-          return;
-        case "3":
-          document.getElementById("#pizzaSize").innerHTML = "Large";
-          return;
-        default:
-          console.log("bug in changeSliderLabel");
-      }
+    switch(size) {
+      case "1":
+        document.querySelector("#pizzaSize").innerHTML = "Small";
+        return;
+      case "2":
+        document.querySelector("#pizzaSize").innerHTML = "Medium";
+        return;
+      case "3":
+        document.querySelector("#pizzaSize").innerHTML = "Large";
+        return;
+      default:
+        console.log("bug in changeSliderLabel");
     }
   }
 
@@ -426,10 +424,7 @@ var resizePizzas = function(size) {
   // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
   function determineDx (elem, size) {
     var oldwidth = elem.offsetWidth;
-    var windowwidth;
-    if (document.getElementById("#randomPizzas")){
-      windowwidth = document.getElementById("#randomPizzas").offsetWidth;
-    }
+    var windowwidth = document.querySelector("#randomPizzas").offsetWidth;
     var oldsize = oldwidth / windowwidth;
 
     // TODO: change to 3 sizes? no more xl?
