@@ -31,3 +31,4 @@ Click this link for the [Front-End Nanodegree Mobile Portfolio](http://lastres0r
 1. Optimized the `changePizzaSizes(size)` function to reduce the number of calculations and functions being made within the iteration loop.
 1. Replaced instances of `querySelector()` with `getElementById()`
 1. Replaced instances of `querySelectorAll()` with `getElementsByClassName()`
+1. Refactored `changePizzaSizes(size)` to remove unnecessary functions and document calls.
