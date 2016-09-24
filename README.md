@@ -1,4 +1,5 @@
-## Website Performance Optimization portfolio project
+#Website Performance Optimization portfolio project
+![Part of the Udacity Front-End Web Development Nanodegree](https://img.shields.io/badge/Udacity-Front--End%20Web%20Developer%20Nanodegree-02b3e4.svg)
 
 Several optimizations have been made to this portfolio to make `index.html` achieve at least a score of 90 according to Google PageSpeed Insights, as well as optimizing `pizza.html` to run at a rate of 60 fps or better.
 
